@@ -1,0 +1,15 @@
+{% extends 'employee_register/base.html' %}
+
+{% block content %}
+    <h1>Welcome to my site </h1>
+    <div class="row">
+        <div class="col-md-6">
+            <a href="{% url 'employee_list' %}" class = "btn btn-outline-success btn-block">See the list </a>
+        </div>
+
+        <div class="col-md-6">
+            <a href="{% url 'employee_insert' %}" class = "btn btn-outline-success btn-block">Add Employees </a>
+        </div>
+    </div>
+
+{% endblock content %}
